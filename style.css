@@ -1,0 +1,45 @@
+ul {
+    list-style-type: none;
+    height: 500px;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li a {
+display: block;
+color: white;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+line-height: 3rem; /* Espacement entre les elements dans le navbar */
+}
+
+li a:hover:not(.active) {
+background-color: #e70045;
+}
+
+.child1 {
+    display: inline-block; /* Navbar et image dans la même ligne */
+}
+#image {
+    height: 500px;
+    width: 1140px;
+}
+
+.section {
+    background-color: #333;
+    color: white;
+    height: 4rem;
+}
+h1{
+    padding-top: 1rem;
+}
+h1,p {
+    padding-left: 2rem;
+    padding-bottom: 2rem;
+}
+#image-cv {
+    padding-top: 2rem;
+}
