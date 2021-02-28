@@ -1,41 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+
     <title>Portfolio Rayhane</title>
-</head>
-<body>
-    <!--Accueil-->
-    <div> 
-        <div class="child1"> 
-            <ul>
-            <li><a href="#accueil">Accueil</a></li>
-            <li><a href="#apropos">A propos</a></li>
-            <li><a href="#diplomes">Diplômes</a></li>
-            <li><a href="#projets">Projets</a></li>
-            <li><a href="#competences">Compétences</a></li>
-            <li><a href="#contact">Contact</a></li>
-            </ul>
-        </div>
-        <div class="child1">
-            <img id="image" src="portfolio.jpg" alt=""> 
-        
-        </div>
+  </head>
+  <body>
+    <!--home-->
+    <div id="home">
+      <div class="navbar">
+        <a href="#skills">Skills</a>
+        <a href="#experience">Work Experience</a>
+        <a href="#education">Education</a>
+        <a href="#about">About me</a>
+      </div>
+      <div class="content child">
+        <h1>Hello, I am Rayhane Emna Bousnina</h1>
+        <h3>Web Developper</h3>
+      </div>
+      <div class="child">
+        <img id="image-ronde" src="rayhane2.png" alt="" />
+      </div>
     </div>
-    <!--A propos-->
-    <div id="apropos" class="section">
-        <h1>A propos</h1>
+
+    <!--./home-->
+    <hr />
+    <!--about-->
+    <div class="section" id="about">
+      <div class="child">
+        <img id="image-profil" src="rayhane.jpeg" alt="" />
+      </div>
+      <div class="child">
+        <h1>Who am I ?</h1>
+        <p>
+          Rayhane Emna Bousnina, 25 years old, <br />
+          I am currently graduated ( Bac+5 ) in Web Intelligence <br />
+          at the Higher School of Digital Economy (ESEN) in Manouba Tunisia.
+          <br />
+          I am interested in the digital world, especially Web Development.
+        </p>
+      </div>
     </div>
-    <div class="child1"><img id="image-cv" src="rayhane.jpeg" alt=""></div>
-    <div class="child1"><p>Rayhane Emna Bousnina, <br> 25 ans, <br> diplômée d'une licence fondamentale en Sciences de l'informatique <br>
-        et d'un mastère de recherche en Web Intelligence.</p></div>
-    
-    <!--Diplomes-->
-    <div id="diplomes" class="section">
-        <h1>Diplômes</h1>
-    </div>    
-</body>
+    <!--./about-->
+    <hr />
+    <!--education-->
+    <div class="section" id="education">
+      <div id="card" class="child">
+        <img id="logo" src="logoesen.png" alt="" />
+        <p>
+          Research Master in Web Intelligence <br />
+          From September 2017 to January 2020
+        </p>
+      </div>
+      <div id="card" class="child">
+        <img id="logo" src="isima.jpg" alt="" />
+        <p>
+          Bachelor's degree in computer science <br />
+          From September 2014 to July 2017
+        </p>
+      </div>
+    </div>
+    <!--./education-->
+    <hr />
+    <!--work experience-->
+    <div class="section" id="experience">
+      <div id="project" class="child">
+        <h1>
+          1. Querying a web of linked data, <br />
+          overview and experimentation
+        </h1>
+        <p>
+          State of the art on the semantic web <br />
+          and querying linked data. <br />
+          Experimentation on the SQUIN <br />
+          interrogation system <br />
+          with the Link Traversal <br />
+          based Query Execution approach.
+        </p>
+        <h3>Technologies :</h3>
+        RDF / SPARQL / XML
+      </div>
+      <div id="project" class="child">
+        <h1>
+          2. Establishment of <br />
+          a reservation system
+        </h1>
+        <p>
+          Design and production <br />
+          of a web application <br />
+          for booking premises online.
+        </p>
+        <h3>Technologies :</h3>
+        HTML5 / CSS3 / PHP7 / MySQL / JavaScript
+      </div>
+    </div>
+    <!--./work experience-->
+    <hr />
+    <!--skills-->
+    <div
+      style="
+        background-image: url(skills.jpg);
+        background-attachment: fixed;
+        background-size: cover;
+        background-repeat: no-repeat;
+      "
+    >
+      <div class="section" id="skills">
+        <div class="child">
+          <h4>HTML5</h4>
+          <progress id="HTML5" value="70" max="100"></progress>
+          <h4>CSS3</h4>
+          <progress id="CSS3" value="70" max="100"></progress>
+          <h4>PHP</h4>
+          <progress id="PHP7" value="60" max="100"></progress>
+        </div>
+
+        <div class="child">
+          <h4>Bootstrap</h4>
+          <progress id="Bootstrap" value="60" max="100"></progress>
+          <h4>SQL</h4>
+          <progress id="SQL" value="60" max="100"></progress>
+          <h4>JAVA</h4>
+          <progress id="Java" value="50" max="100"></progress>
+        </div>
+      </div>
+    </div>
+    <!--./skills-->
+
+    <!--contact-->
+
+    <!--./contact-->
+  </body>
 </html>
