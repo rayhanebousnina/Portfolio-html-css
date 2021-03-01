@@ -12,11 +12,11 @@ body {
   margin-bottom: 50px;
   color: white;
   border-radius: 1rem;
+  float: right;
 }
 .navbar a {
   background-color: #09679e0e;
   color: whitesmoke;
-  float: right;
   text-decoration: none;
   font-size: 18px;
   padding: 20px 30px;
@@ -86,4 +86,7 @@ h3 {
 }
 #title:hover {
   color:  rgba(243, 51, 51, 0.473);
+}
+.paragraph {
+  font-size: 1.5rem;
 }
